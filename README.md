@@ -6,10 +6,14 @@
 Run:
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew config
 ```
 
 #### 2. iTerm 2
+
+Run:
+```bash
+brew cask install iterm2
+```
 
 #### 3. MS Code
 
