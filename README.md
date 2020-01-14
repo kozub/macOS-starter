@@ -56,6 +56,7 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 
     ```bash
     curl -s "https://get.sdkman.io" | bash
+    source "~/.sdkman/bin/sdkman-init.sh"
     sdk version
     sdk install java 11.0.5-amzn
     java -version
