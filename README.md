@@ -2,6 +2,13 @@
 
 #### 1. Brew
 
+
+Run:
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew config
+```
+
 #### 2. iTerm 2
 
 #### 3. MS Code
