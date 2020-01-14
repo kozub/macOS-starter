@@ -50,7 +50,17 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     ```
 2. Open KeePassXC and load your database.
 
-### 7. SDKMan
+### 7. SDKMAN! & Java
+
+1. Run: 
+
+    ```bash
+    curl -s "https://get.sdkman.io" | bash
+    sdk version
+    sdk install java 11.0.5-amzn
+    java -version
+ 
+    ```
 
 ### 8. JetBrain ToolBox
 
@@ -67,6 +77,8 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 ### 14. Gradle & Maven
 
 ### 15. Terraform Switch
+
+### 16. Spotify
 
 
 ## Additional configurations:
