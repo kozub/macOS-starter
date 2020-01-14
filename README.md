@@ -2,29 +2,44 @@
 
 ### 1. Brew
 
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+1. Run:
+    ```bash
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
 
 ### 2. iTerm 2
 
-```bash
-brew cask install iterm2
-```
+1. Run:
+    ```bash
+    brew cask install iterm2
+    ```
 
 ### 3. Visual Studio Code
 
-```bash
-brew cask install visual-studio-code 
-```
+1. Run:
+    ```bash
+    brew cask install visual-studio-code 
+    ```
 
 ### 4. ShiftIt
 
-```bash
-brew cask install shiftit
-```
+1. Run:
+    ```bash
+    brew cask install shiftit
+    ```
+2. Open ShiftIt and follow its instruction. 
 
-### 5. Clippy
+### 5. Clipy
+
+Having in mind that official [project](https://github.com/Clipy/Clipy) has been abandoned, please consider using its fork:
+
+1. Download last release from [ian4hu-clipy-fork](https://github.com/ian4hu/Clipy/releases)
+2. Unzip and install.
+3. Add to snippets (`⌘ + ⇧ + V` and `Edit preferences`):
+    ```
+    ¯\_(ツ)_/¯
+    (ʘ‿ʘ)
+    ```
 
 ### 6. KeePassXC
 
