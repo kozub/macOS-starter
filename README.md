@@ -43,6 +43,13 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 
 ### 6. KeePassXC
 
+1. Run:
+
+    ```bash
+    brew cask install keepassxc
+    ```
+2. Open KeePassXC and load your database.
+
 ### 7. SDKMan
 
 ### 8. JetBrain ToolBox
