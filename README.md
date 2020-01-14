@@ -1,3 +1,12 @@
+## Convention preparation:
+
+1. Run:
+    ```bash
+    mkdir ~/Github/
+    mkdir ~/Scripts
+    mkdir ~/Workspace
+    ```
+
 ## Install applications:
 
 ### 1. Brew
@@ -50,7 +59,7 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     ```
 2. Open KeePassXC and load your database.
 
-### 7. SDKMAN! & Java
+### 7. SDKMAN!x1 & Java
 
 1. Run: 
 
