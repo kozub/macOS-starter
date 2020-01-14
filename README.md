@@ -20,6 +20,10 @@ brew cask install visual-studio-code
 
 ### 4. ShiftIt
 
+```bash
+brew cask install shiftit
+```
+
 ### 5. Clippy
 
 ### 6. KeePassXC
