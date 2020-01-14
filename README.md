@@ -101,7 +101,29 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 
 ### 4. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
 
-### 5. GIT with two profiles
+### 5. Git with two profiles
+
+1. Create an additional profile configuration:
+
+    ```bash
+    echo "[user]
+        email = private-mail@gmail.com
+        name = Grzegorz Kozub" > ~/Github/.gitconfig
+    ```
+    
+2. Create main profile configuration:
+
+    ```bash
+    echo "[core]
+       autocrlf = input
+    
+    [user]
+       email = official-mail@gmail.com
+       name = Grzegorz Kozub
+    
+    [includeIf "gitdir:~/Github/"]
+       path = ~/Github/.gitconfig" >> ~/.gitconfig
+    ```
 
 ### 6. Clean up local branches in GIT
 
