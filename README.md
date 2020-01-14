@@ -1,64 +1,65 @@
 ## Install applications:
 
-#### 1. Brew
+### 1. Brew
 
-
-Run:
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-#### 2. iTerm 2
+### 2. iTerm 2
 
-Run:
 ```bash
 brew cask install iterm2
 ```
 
-#### 3. MS Code
+### 3. Visual Studio Code
 
-#### 4. ShiftIt
+```bash
+brew cask install visual-studio-code 
+```
 
-#### 5. Clippy
+### 4. ShiftIt
 
-#### 6. KeePassXC
+### 5. Clippy
 
-#### 7. SDKMan
+### 6. KeePassXC
 
-#### 8. JetBrain ToolBox
+### 7. SDKMan
 
-#### 9. Intellij 
+### 8. JetBrain ToolBox
 
-#### 10. MonoSnap
+### 9. Intellij 
 
-#### 11. Franz
+### 10. MonoSnap
 
-#### 12. Slack
+### 11. Franz
 
-#### 13. AWS CLI
+### 12. Slack
 
-#### 14. Gradle & Maven
+### 13. AWS CLI
 
-#### 15. Terraform Switch
+### 14. Gradle & Maven
+
+### 15. Terraform Switch
 
 
 ## Additional configurations:
 
-#### 1. ZSH as default shell
+### 1. ZSH as default shell
 
-#### 2. Fancy prompt
+### 2. Fancy prompt
 
-#### 3. FZF as finder in CLI
+### 3. FZF as finder in CLI
 
-#### 4. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
+### 4. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
 
-#### 5. GIT with two profiles
+### 5. GIT with two profiles
 
-#### 6. Clean up local branches in GIT
+### 6. Clean up local branches in GIT
 
-#### 7. FindCharsInPass script
+### 7. FindCharsInPass script
 
-#### 8. MKCDir
+### 8. MKCDir
 
     
 
