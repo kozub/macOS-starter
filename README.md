@@ -69,26 +69,23 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     sdk version
     sdk install java 11.0.5-amzn
     java -version
- 
     ```
 
-### 8. JetBrain ToolBox
+### 8. JetBrain ToolBox & Intellij
 
-### 9. Intellij 
+1. Run: 
 
-### 10. MonoSnap
+    ```bash
+    brew cask install jetbrains-toolbox
+    ```
+2. Open `JetBrains ToolBox` and install `Intellij`.
 
-### 11. Franz
-
-### 12. Slack
-
-### 13. AWS CLI
-
-### 14. Gradle & Maven
-
-### 15. Terraform Switch
-
-### 16. Spotify
+### 9. Gradle & Maven
+### 10. AWS CLI
+### 12. MonoSnap
+### 13. Franz
+### 14. Terraform Switch
+### 15. Spotify
 
 
 ## Additional configurations:
@@ -114,7 +111,7 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 2. Create main profile configuration:
 
     ```bash
-    echo "[core]
+    echo '[core]
        autocrlf = input
     
     [user]
@@ -122,7 +119,7 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
        name = Grzegorz Kozub
     
     [includeIf "gitdir:~/Github/"]
-       path = ~/Github/.gitconfig" >> ~/.gitconfig
+       path = ~/Github/.gitconfig' >> ~/.gitconfig
     ```
 
 ### 6. Clean up local branches in GIT
