@@ -1,10 +1,14 @@
 ## Convention preparation:
 
 1. Run:
-    ```bash
+    ```
     mkdir ~/Github/
     mkdir ~/Scripts
     mkdir ~/Workspace
+       
+    echo 'alias python="python3"
+    alias g=git
+    export AWS_PROFILE=myprofile' >> ~/.env
     ```
 
 ## Install applications:
@@ -66,9 +70,27 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     ```bash
     curl -s "https://get.sdkman.io" | bash
     source "~/.sdkman/bin/sdkman-init.sh"
+    echo 'source "$HOME/.sdkman/bin/sdkman-init.sh"' >> ~/.zshrc
     sdk version
     sdk install java 11.0.5-amzn
+    sdk install java 8.0.232-amzn
     java -version
+    ```
+2. Add additional aliases:
+    ```
+    echo '
+    jdk8 ()
+    {
+        sdk use java  8.0.222-amzn
+        java -version
+    }
+    jdk11 ()
+    {
+        sdk use java 11.0.4-amzn
+        java -version
+    }
+    jdk11
+    ' >> ~/.env
     ```
 
 ### 8. JetBrain ToolBox & Intellij
@@ -148,9 +170,17 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 
 ### 3. FZF as finder in CLI
 
-### 4. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
+1. Run: 
+    ```
+    brew install fzf
+    $(brew --prefix)/opt/fzf/install
+   ```
+   
+### 4. ZSH history
 
-### 5. Git with two profiles
+### 5. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
+
+### 6. Git with two profiles
 
 1. Create an additional profile configuration:
 
