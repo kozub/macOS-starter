@@ -117,7 +117,34 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 
 ### 1. ZSH as default shell
 
-### 2. Fancy prompt
+1. Run `chsh -s $(which zsh)`.
+2. Restart terminal.
+
+### 2. Fancy prompt in ZSH
+
+1. Install `oh-my-zsh` by running: 
+    ```bash
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ```
+2. Install `powerlevel 9k` by running:
+    ```bash
+   brew tap sambadevi/powerlevel9k
+   brew install powerlevel9k
+   ```
+   
+3. Enable glyphs in iTerm: Preferences -> search for `Use build-in Powerlink glyphs` -> enable it.
+4. Add to `~/.zshrc`:
+    ```
+    # Path to your oh-my-zsh installation.
+    export ZSH="~/.oh-my-zsh"
+    
+    #Theme configuration
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+    POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+    POWERLEVEL9K_DISABLE_RPROMPT=true
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir vcs)
+    source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+    ``` 
 
 ### 3. FZF as finder in CLI
 
