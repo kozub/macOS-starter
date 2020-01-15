@@ -81,10 +81,35 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 2. Open `JetBrains ToolBox` and install `Intellij`.
 
 ### 9. Gradle & Maven
+
+1. Run:
+    ```bash
+    sdk install gradle 6.0
+    sdk install maven 3.6.3
+    
+    gradle help
+    maven -version
+    ```
+   
 ### 10. AWS CLI
+
+1. Run:
+    ```bash
+    curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+    unzip awscli-bundle.zip
+    sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+    ```
+   
+### 11. Terraform Switcher
+
+1. Run:
+    ```bash
+    brew install warrensbox/tap/tfswitch
+    ```
+2. Run `tfswitch` and choose preferred version.    
+
 ### 12. MonoSnap
 ### 13. Franz
-### 14. Terraform Switch
 ### 15. Spotify
 
 
