@@ -81,12 +81,12 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     echo '
     jdk8 ()
     {
-        sdk use java  8.0.222-amzn
+        sdk use java  8.0.232-amzn
         java -version
     }
     jdk11 ()
     {
-        sdk use java 11.0.4-amzn
+        sdk use java 11.0.5-amzn
         java -version
     }
     jdk11
@@ -130,8 +130,15 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     ```
 2. Run `tfswitch` and choose preferred version.    
 
+### 13. Franz - communicators aggregator.
+
+1. Run:
+    ```bash
+    brew cash install franz
+    ```
+2. Open Franz and log in.   
+   
 ### 12. MonoSnap
-### 13. Franz
 ### 15. Spotify
 
 
