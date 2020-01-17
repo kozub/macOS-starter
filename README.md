@@ -122,6 +122,20 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
     ```
    
+ 2. Create config files: 
+```bash 
+
+echo '
+[myprofile]
+aws_access_key_id = XXX
+aws_secret_access_key = XXX' > ~/.aws/credentials
+
+echo '
+[myprofile]
+output = json
+region = eu-west-1' > ~/.aws/config
+```
+   
 ### 11. Terraform Switcher
 
 1. Run:
@@ -175,7 +189,16 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
     ``` 
 
-### 3. FZF as finder in CLI
+### 3. Colored files in console
+
+    1. Run:
+    ```
+    echo `
+    export CLICOLOR=1
+    export LSCOLORS=GxFxCxDxBxegedabagaced' >> ~/.zshrc
+    ```
+
+### 4. FZF as finder in CLI
 
 1. Run: 
     ```
@@ -186,6 +209,24 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 ### 4. ZSH history
 
 ### 5. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
+
+1. Open iTerm's Preferences -> Profile -> Session and enable "Status bar enabled"
+2. Click on "Configure Status Bar" and add your preferred items.
+3. Add new `Interpoled-String` component to the bar with value `\(user.awsProfile)`
+3. Go to Appearance and set "Status bar location" to bottom.
+4. Run: 
+    ```
+    curl -L https://iterm2.com/shell_integration/zsh \
+    -o ~/.iterm2_shell_integration.zsh
+    ```
+5. Run: 
+    ```
+    echo '
+    source ~/.iterm2_shell_integration.zsh
+    iterm2_print_user_vars() {
+      iterm2_set_user_var awsProfile $AWS_PROFILE
+    }' >> ~/.zshrc 
+    ```
 
 ### 6. Git with two profiles
 
@@ -217,8 +258,16 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 
 ### 8. MKCDir
 
-    
+1. Run: 
 
-
+```bash
+echo '
+# mkdir + cd
+mkcdir ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+};' >> ~/.env
+```
 
 
