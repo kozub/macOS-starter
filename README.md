@@ -63,7 +63,7 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     ```
 2. Open KeePassXC and load your database.
 
-### 7. SDKMAN!x1 & Java
+### 7. SDKMAN! & Java
 
 1. Run: 
 
@@ -144,7 +144,7 @@ region = eu-west-1' > ~/.aws/config
     ```
 2. Run `tfswitch` and choose preferred version.    
 
-### 13. Franz - communicators aggregator.
+### 12. Franz - communicators aggregator.
 
 1. Run:
     ```bash
@@ -152,9 +152,13 @@ region = eu-west-1' > ~/.aws/config
     ```
 2. Open Franz and log in.   
    
-### 12. MonoSnap
-### 15. Spotify
+### 13. MonoSnap
+### 14. Spotify
 
+1. Run:
+    ```
+    brew cask install spotify
+    ```
 
 ## Additional configurations:
 
@@ -253,6 +257,14 @@ region = eu-west-1' > ~/.aws/config
     ```
 
 ### 6. Clean up local branches in GIT
+
+```bash
+echo '
+# remove all local branches
+alias git-cleanup="git fetch -p && git branch -vv | grep \x27origin/.*: gone]\x27 | awk \x27{print \$1}\x27 | xargs git branch -D"
+' >> ~/.env
+```
+[source](https://medium.com/darek1024/how-to-clean-local-git-branches-that-were-removed-on-the-remote-4d76f7de93ac)
 
 ### 7. FindCharsInPass script
 
