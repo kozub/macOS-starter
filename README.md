@@ -210,7 +210,9 @@ region = eu-west-1' > ~/.aws/config
     $(brew --prefix)/opt/fzf/install
    ```
    
-### 4. ZSH history
+2. Open your `.zshrc` file and add to `fzf` to plugins.
+   
+### 5. ZSH history
 
 1. Add configuration to your `.zshrc` by running command
 
@@ -224,7 +226,7 @@ region = eu-west-1' > ~/.aws/config
    SAVEHIST=10000000' >> ~/.zshrc 
    ```
 
-### 5. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
+### 6. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
 
 1. Open iTerm's Preferences -> Profile -> Session and enable "Status bar enabled"
 2. Click on "Configure Status Bar" and add your preferred items.
@@ -244,7 +246,7 @@ region = eu-west-1' > ~/.aws/config
     }' >> ~/.zshrc 
     ```
 
-### 6. Git with two profiles
+### 7. Git with two profiles
 
 1. Create an additional profile configuration:
 
@@ -268,7 +270,7 @@ region = eu-west-1' > ~/.aws/config
        path = ~/Github/.gitconfig' >> ~/.gitconfig
     ```
 
-### 6. Clean up local branches in GIT
+### 8. Clean up local branches in GIT
 
 ```bash
 echo '
@@ -278,9 +280,9 @@ alias git-cleanup="git fetch -p && git branch -vv | grep \x27origin/.*: gone]\x2
 ```
 [source](https://medium.com/darek1024/how-to-clean-local-git-branches-that-were-removed-on-the-remote-4d76f7de93ac)
 
-### 7. FindCharsInPass script
+### 9. FindCharsInPass script
 
-### 8. MKCDir
+### 10. MKCDir
 
 1. Run: 
 
