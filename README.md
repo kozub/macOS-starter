@@ -212,6 +212,18 @@ region = eu-west-1' > ~/.aws/config
    
 ### 4. ZSH history
 
+1. Add configuration to your `.zshrc` by running command
+
+   ```
+   echo '
+   # History settings
+   setopt inc_append_history
+   setopt share_history
+   HISTFILE="$HOME/.zsh_history"
+   HISTSIZE=10000000
+   SAVEHIST=10000000' >> ~/.zshrc 
+   ```
+
 ### 5. iTerm status bar with AWS_PROFILE, JAVA version, CPU and RAM consumption
 
 1. Open iTerm's Preferences -> Profile -> Session and enable "Status bar enabled"
