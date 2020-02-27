@@ -190,6 +190,9 @@ region = eu-west-1' > ~/.aws/config
     POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
     POWERLEVEL9K_DISABLE_RPROMPT=true
     POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir vcs)
+    POWERLEVEL9K_DIR_HOME_BACKGROUND='deepskyblue1'
+    POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='steelblue3'
+    POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='gold1'
     source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
     ``` 
 
