@@ -299,4 +299,20 @@ mkcdir ()
 };' >> ~/.env
 ```
 
+### 11. ZSH autosuggestions
+
+1. Add configuration to your `.zshrc` by running command
+
+   ```
+   echo '
+   # Enable autosuggestions
+   CASE_SENSITIVE="false"
+   setopt MENU_COMPLETE
+   setopt no_list_ambiguous
+   
+   autoload -Uz compinit
+   compinit
+   zstyle ":completion:*" menu yes select'
+   ```
+
 
