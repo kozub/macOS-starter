@@ -69,24 +69,18 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
 
     ```bash
     curl -s "https://get.sdkman.io" | bash
-    source "~/.sdkman/bin/sdkman-init.sh"
+    source ~/.sdkman/bin/sdkman-init.sh
     echo 'source "$HOME/.sdkman/bin/sdkman-init.sh"' >> ~/.zshrc
     sdk version
-    sdk install java 11.0.5-amzn
-    sdk install java 8.0.232-amzn
+    sdk install java 11.0.8-amzn
     java -version
     ```
 2. Add additional aliases:
     ```
     echo '
-    jdk8 ()
-    {
-        sdk use java  8.0.232-amzn
-        java -version
-    }
     jdk11 ()
     {
-        sdk use java 11.0.5-amzn
+        sdk use java 11.0.8-amzn
         java -version
     }
     jdk11
