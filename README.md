@@ -34,13 +34,14 @@
     brew cask install visual-studio-code 
     ```
 
-### 4. ShiftIt
+### 4. Rectangle
+Moving and resizing windows in macOS using keyboard shortcuts.
 
 1. Run:
     ```bash
-    brew cask install shiftit
+    brew cask install rectangle
     ```
-2. Open ShiftIt and follow its instruction. 
+2. Open Rectangle and follow its instruction. 
 
 ### 5. Clipy
 
