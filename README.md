@@ -55,6 +55,8 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     (ʘ‿ʘ)
     ```
 
+Alternatively use: https://maccy.app/
+
 ### 6. KeePassXC
 
 1. Run:
@@ -73,18 +75,18 @@ Having in mind that official [project](https://github.com/Clipy/Clipy) has been 
     source ~/.sdkman/bin/sdkman-init.sh
     echo 'source "$HOME/.sdkman/bin/sdkman-init.sh"' >> ~/.zshrc
     sdk version
-    sdk install java 11.0.8-amzn
+    sdk install java 15.0.1-amzn
     java -version
     ```
 2. Add additional aliases:
     ```
     echo '
-    jdk11 ()
+    jdk15 ()
     {
-        sdk use java 11.0.8-amzn
+        sdk use java 15.0.1-amzn
         java -version
     }
-    jdk11
+    jdk15
     ' >> ~/.env
     ```
 
@@ -193,9 +195,9 @@ region = eu-west-1' > ~/.aws/config
 
 ### 3. Colored files in console
 
-    1. Run:
+1. Run:
     ```
-    echo `
+    echo '
     export CLICOLOR=1
     export LSCOLORS=GxFxCxDxBxegedabagaced' >> ~/.zshrc
     ```
