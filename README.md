@@ -312,4 +312,14 @@ mkcdir ()
    zstyle ":completion:*" menu yes select'
    ```
 
+### 11. ZSH - enable LS colors 
+
+1. Add configuration to your `.zshrc` by running command
+
+   ```
+   echo '
+   # Enable LS colors
+   export CLICOLOR=1
+   ' >> ~/.zshrc
+   ```
 
